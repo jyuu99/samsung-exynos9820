@@ -1,0 +1,17 @@
+- name: Kernel Configure
+      run: |
+        ./build config
+                os_patch_level=2020-12         
+                model=G975F    
+                name="CRUEL-V3.9"
+                +magisk        
+                +nohardening   
+                +ttl           
+                +wireguard     
+                +cifs          
+                +sdfat         
+                +ntfs          
+                +tcp_cibuc     
+                -morosound     
+                +boeffla_wl_blocker
+                +1000hz 
